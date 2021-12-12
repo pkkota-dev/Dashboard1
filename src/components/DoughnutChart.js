@@ -12,7 +12,7 @@ const DoughnutChart=()=>{
     const [value, setValue] = React.useState('');
     function fetchData(){
     
-        fetch('http://localhost:5000/api/v1/metrics/getAllWetWasteProcessed').then(
+        fetch('https://trashoutservice.azurewebsites.net/api/v1/metrics/getAllWetWasteProcessed').then(
           (response) => {
   
             data1 = response.json();
